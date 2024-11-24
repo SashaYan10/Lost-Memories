@@ -9,10 +9,17 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryDescriptionPanel;
     public Image itemImage;
     public Text itemDescription;
+    public GameObject[] blockingPanels;
+
     private bool isOpen = false;
 
     void Update()
     {
+        if (isOpen && IsBlockingPanels())
+        {
+            CloseInventory();
+        }
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleInventory();
@@ -21,6 +28,12 @@ public class InventoryManager : MonoBehaviour
 
     public void ToggleInventory()
     {
+        if (IsBlockingPanels())
+        {
+            CloseInventory();
+            return;
+        }
+
         isOpen = !isOpen;
         inventoryPanel.SetActive(isOpen);
 
@@ -32,6 +45,8 @@ public class InventoryManager : MonoBehaviour
 
     public void ShowDescription(Item item)
     {
+        if (IsBlockingPanels()) return;
+
         inventoryDescriptionPanel.SetActive(true);
         itemImage.sprite = item.itemIcon;
         itemDescription.text = item.itemDescription;
@@ -40,5 +55,25 @@ public class InventoryManager : MonoBehaviour
     public void HideDescription()
     {
         inventoryDescriptionPanel.SetActive(false);
+    }
+
+    public void CloseInventory()
+    {
+        isOpen = false;
+        inventoryPanel.SetActive(false);
+        inventoryDescriptionPanel.SetActive(false);
+    }
+
+    private bool IsBlockingPanels()
+    {
+        foreach (var panel in blockingPanels)
+        {
+            if (panel != null && panel.activeSelf)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

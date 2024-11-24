@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bdfaffd16bb89b43a456c34634e0bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: 2
+  NextLevel: 3
   sec: 1
 --- !u!4 &864833966
 Transform:

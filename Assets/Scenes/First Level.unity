@@ -4178,7 +4178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &318668429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6936,7 +6936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &497684983
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17021,6 +17021,11 @@ MonoBehaviour:
   inventoryDescriptionPanel: {fileID: 307577793}
   itemImage: {fileID: 71748009}
   itemDescription: {fileID: 728182631}
+  blockingPanels:
+  - {fileID: 159571580}
+  - {fileID: 727867435}
+  - {fileID: 2000446696}
+  - {fileID: 2006629114}
 --- !u!1 &1138310453
 GameObject:
   m_ObjectHideFlags: 0
@@ -20339,7 +20344,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23801,7 +23806,7 @@ MonoBehaviour:
   objectsAct:
   - {fileID: 2070360807}
   objectsHide: []
-  delay: 1
+  delay: 0.1
 --- !u!114 &1711566078
 MonoBehaviour:
   m_ObjectHideFlags: 0
