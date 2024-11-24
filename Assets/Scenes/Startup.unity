@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: 1
-  sec: 6
+  sec: 7
 --- !u!4 &377880676
 Transform:
   m_ObjectHideFlags: 0

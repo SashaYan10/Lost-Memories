@@ -15,6 +15,15 @@ public class AddItem : MonoBehaviour
 
     public void AddItemToInventory()
     {
+        StartCoroutine(ActivateInventory());
+    }
+
+    private IEnumerator ActivateInventory()
+    {
+        inventoryManager.inventoryPanel.SetActive(true);
+
+        yield return new WaitForSeconds(0.1f);
+
         var slots = inventoryManager.inventoryPanel.GetComponentsInChildren<ItemButton>();
         foreach (var slot in slots)
         {
@@ -24,5 +33,7 @@ public class AddItem : MonoBehaviour
                 break;
             }
         }
+
+        inventoryManager.inventoryPanel.SetActive(false);
     }
 }

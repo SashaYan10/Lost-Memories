@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2
+    m_Start: 2.9999999999999973
     m_ClipIn: 0
     m_Asset: {fileID: 8436529167535107242}
     m_Duration: 2
@@ -251,11 +251,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 1
-    m_PreExtrapolationTime: 2
+    m_PostExtrapolationTime: 0.9999999999999991
+    m_PreExtrapolationTime: 2.9999999999999973
     m_DisplayName: Logo
   - m_Version: 1
-    m_Start: 5
+    m_Start: 5.9999999999999964
     m_ClipIn: 0
     m_Asset: {fileID: 8239263814965924309}
     m_Duration: 1
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0
+    m_Start: 1
     m_ClipIn: 0
     m_Asset: {fileID: -4725349118323746405}
     m_Duration: 2
@@ -430,11 +430,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 3
-    m_PreExtrapolationTime: 0
+    m_PostExtrapolationTime: 2.9999999999999973
+    m_PreExtrapolationTime: 1
     m_DisplayName: Created
   - m_Version: 1
-    m_Start: 5
+    m_Start: 5.999999999999997
     m_ClipIn: 0
     m_Asset: {fileID: 4605488110296906890}
     m_Duration: 1
