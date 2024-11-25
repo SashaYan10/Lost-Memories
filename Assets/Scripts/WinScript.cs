@@ -19,6 +19,7 @@ public class WinScript : MonoBehaviour
         if (myElement >= fullElementToWin)
         {
             winPanel.SetActive(true);
+            myPanel.SetActive(false);
         }
     }
 
