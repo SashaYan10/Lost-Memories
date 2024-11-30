@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivateObjTime : MonoBehaviour
 {
     [SerializeField] private GameObject playerAct;
-    [SerializeField] private GameObject playerHide;
+    [SerializeField] private GameObject[] objectsHide;
     public float sec;
 
     private void Start()
@@ -17,6 +17,9 @@ public class ActivateObjTime : MonoBehaviour
     {
         yield return new WaitForSeconds(sec);
         playerAct.SetActive(true);
-        playerHide.SetActive(false);
+        foreach (GameObject obj in objectsHide)
+        {
+            obj.SetActive(false);
+        }
     }
 }
