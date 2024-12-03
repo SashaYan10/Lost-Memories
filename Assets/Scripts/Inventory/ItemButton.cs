@@ -28,6 +28,18 @@ public class ItemButton : MonoBehaviour
         UpdateButtonState();
     }
 
+    public Item GetItem()
+    {
+        return currentItem;
+    }
+
+    public void ClearItem()
+    {
+        currentItem = null;
+        buttonImage.sprite = null;
+        UpdateButtonState();
+    }
+
     private void UpdateButtonState()
     {
         buttonImage.enabled = currentItem != null;

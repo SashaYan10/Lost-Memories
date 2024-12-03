@@ -7,6 +7,10 @@ public class ActivateObjAfterCheckActivation : MonoBehaviour
     public List<GameObject> objTrack;
     public GameObject objAct;
 
+    [Header("Optional Settings")]
+    public bool deleteObjects;
+    public List<GameObject> objectsDelete;
+
     private HashSet<GameObject> activatedObjects = new HashSet<GameObject>();
     private GameObject lastActivatedObject = null;
     private bool lastDeactivatedTriggered = false;
@@ -19,6 +23,11 @@ public class ActivateObjAfterCheckActivation : MonoBehaviour
         {
             objAct.SetActive(true);
             lastDeactivatedTriggered = true;
+
+            if (deleteObjects)
+            {
+                DeleteOptionalObjects();
+            }
         }
     }
 
@@ -45,5 +54,18 @@ public class ActivateObjAfterCheckActivation : MonoBehaviour
             }
         }
         return true;
+    }
+
+    private void DeleteOptionalObjects()
+    {
+        foreach (var obj in objectsDelete)
+        {
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
+
+        objectsDelete.Clear();
     }
 }
