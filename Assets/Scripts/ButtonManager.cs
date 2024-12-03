@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-
+    public float delay = 1f;
     public void ExitGame()
     {
         Application.Quit();
@@ -30,5 +30,25 @@ public class ButtonManager : MonoBehaviour
     public void DeleteObject(GameObject obj)
     {
         Destroy(obj);
+    }
+
+    public void HideDelay(GameObject obj)
+    {
+        StartCoroutine(Object());
+        IEnumerator Object()
+        {
+            yield return new WaitForSeconds(delay);
+            obj.SetActive(false);
+        }
+    }
+
+    public void ActDelay(GameObject obj)
+    {
+        StartCoroutine(Object());
+        IEnumerator Object()
+        {
+            yield return new WaitForSeconds(delay);
+            obj.SetActive(true);
+        }
     }
 }
