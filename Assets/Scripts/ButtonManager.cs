@@ -51,4 +51,10 @@ public class ButtonManager : MonoBehaviour
             obj.SetActive(true);
         }
     }
+
+    public void PlaySound(GameObject obj)
+    {
+        AudioSource audioSource = obj.GetComponent<AudioSource>();
+        audioSource.Play();
+    }
 }
