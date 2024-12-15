@@ -7,6 +7,7 @@ TagManager:
   - ActObj
   - Door
   - Save
+  - Post Processing
   layers:
   - Default
   - TransparentFX

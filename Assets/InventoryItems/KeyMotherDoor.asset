@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3185b591d0275141ac4b6e8dfe4fc8f, type: 3}
+  m_Name: KeyMotherDoor
+  m_EditorClassIdentifier: 
+  itemName: KeyMotherDoor
+  itemIcon: {fileID: 21300000, guid: 3648548a039781143ab2e9822cd7c782, type: 3}
+  itemDescription: "\u041A\u043B\u044E\u0447, \u044F\u043A\u0438\u0439 \u0432\u0456\u0434\u043A\u0440\u0438\u0432\u0430\u0454
+    \u0434\u0432\u0435\u0440\u0456 \u0434\u043E \u043C\u0430\u043C\u0438\u043D\u043E\u0457
+    \u043A\u0456\u043C\u043D\u0430\u0442\u0438."
