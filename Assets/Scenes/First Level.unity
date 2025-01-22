@@ -1535,6 +1535,7 @@ GameObject:
   - component: {fileID: 39649425}
   - component: {fileID: 39649426}
   - component: {fileID: 39649427}
+  - component: {fileID: 39649428}
   m_Layer: 0
   m_Name: LockTable
   m_TagString: Untagged
@@ -1601,7 +1602,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2c115e8c9ed3df9408275f0466ec01c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1658,6 +1659,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.84884, y: 13.247604}
   m_EdgeRadius: 0
+--- !u!114 &39649428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39649424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00a7aef5256bf847b3f056b436f56b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  offset: 3
 --- !u!1 &42629197
 GameObject:
   m_ObjectHideFlags: 0
@@ -22735,7 +22750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37341,7 +37356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 504794187}
-  timeInSeconds: 60
+  timeInSeconds: 1800
   gameOver1: 9
   gameOver2: 10
   gameOver3: 11
@@ -37350,6 +37365,9 @@ MonoBehaviour:
   finish2: {fileID: 613437544}
   finish3: {fileID: 518929160}
   finish4: {fileID: 1885903494}
+  stopTimeOnObjects:
+  - {fileID: 170031987}
+  - {fileID: 1928623348}
 --- !u!4 &829272578
 Transform:
   m_ObjectHideFlags: 0
@@ -39540,7 +39558,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 66192871b593a154d8f1ec7c5dd90ffd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -45289,7 +45307,7 @@ MonoBehaviour:
   playerAct: {fileID: 757081780}
   objectsHide:
   - {fileID: 42629197}
-  sec: 11
+  sec: 9
 --- !u!1 &991861978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4284262129460234809, guid: 23ceba92f88cec345921dd646a2914dd, type: 3}
@@ -71715,6 +71733,7 @@ GameObject:
   - component: {fileID: 1583985100}
   - component: {fileID: 1583985102}
   - component: {fileID: 1583985101}
+  - component: {fileID: 1583985103}
   m_Layer: 0
   m_Name: UnlockedTable
   m_TagString: Untagged
@@ -71784,7 +71803,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1981594500, guid: 49783ee6c5bc1474abb9448bc4b798d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -71862,6 +71881,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1583985103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583985097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00a7aef5256bf847b3f056b436f56b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  offset: 3
 --- !u!1 &1593450825
 GameObject:
   m_ObjectHideFlags: 0

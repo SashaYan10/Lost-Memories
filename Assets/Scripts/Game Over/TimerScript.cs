@@ -16,10 +16,14 @@ public class TimerScript : MonoBehaviour
     [SerializeField] GameObject finish3;
     [SerializeField] GameObject finish4;
 
+    [SerializeField] GameObject[] stopTimeOnObjects;
+
     private bool timerRunning = true;
 
     void Update()
     {
+        CheckPauseObjects();
+
         if (timerRunning)
         {
             if (timeInSeconds > 0)
@@ -42,6 +46,19 @@ public class TimerScript : MonoBehaviour
             else if (finish4.activeSelf)
             {
                 SceneManager.LoadScene(gameOver4);
+            }
+        }
+    }
+
+    void CheckPauseObjects()
+    {
+        timerRunning = true;
+        foreach (GameObject obj in stopTimeOnObjects)
+        {
+            if (obj != null && obj.activeInHierarchy)
+            {
+                timerRunning = false;
+                break;
             }
         }
     }
