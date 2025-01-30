@@ -6,7 +6,8 @@ public class DeleteSwitch : MonoBehaviour
 {
     public GameObject[] objectsDel;
     public GameObject[] objectsAct;
-    public GameObject[] objectsHide;
+    public GameObject[] objectsHide; //Delete objects
+    public GameObject[] objectsHideTrue;
     public float delay;
 
     private void Update()
@@ -17,6 +18,7 @@ public class DeleteSwitch : MonoBehaviour
             {
                 StartCoroutine(ActivateObjects());
                 DestroyObjects();
+                HideObjects();
                 return;
             }
         }
@@ -36,6 +38,14 @@ public class DeleteSwitch : MonoBehaviour
         foreach( GameObject obj in objectsHide)
         {
             Destroy(obj);
+        }
+    }
+
+    void HideObjects()
+    {
+        foreach(GameObject obj in objectsHideTrue)
+        {
+            obj.SetActive(false);
         }
     }
 }
