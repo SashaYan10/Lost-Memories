@@ -25,6 +25,9 @@ public class MenuManager : MonoBehaviour
     [Header("Action Object")]
     [SerializeField] private ActionObject[] actionObject;
 
+    [Header("Objects That Prevent Pause")]
+    [SerializeField] private GameObject[] activeNoPauseObjects;
+
     private bool isPaused;
     void Start()
     {
@@ -38,7 +41,7 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (InputUIManager.instance.MenuOpenCloseInput)
+        if (InputUIManager.instance.MenuOpenCloseInput && CanPause())
         {
             if (!isPaused)
             {
@@ -64,6 +67,8 @@ public class MenuManager : MonoBehaviour
 
     public void Pause()
     {
+        if (!CanPause()) return;
+
         isPaused = true;
         Time.timeScale = 0f;
 
@@ -86,6 +91,16 @@ public class MenuManager : MonoBehaviour
         }
 
         CloseAllMenus();
+    }
+
+    private bool CanPause()
+    {
+        foreach (var obj in activeNoPauseObjects)
+        {
+            if (obj.activeSelf)
+                return false;
+        }
+        return true;
     }
 
     #endregion
