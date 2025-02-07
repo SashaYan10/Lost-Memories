@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3185b591d0275141ac4b6e8dfe4fc8f, type: 3}
+  m_Name: Number3
+  m_EditorClassIdentifier: 
+  itemName: Number3
+  itemIcon: {fileID: 21300000, guid: 2b52bd010ec6e3440b11ff2888d0fd2d, type: 3}
+  itemDescription: "\u0424\u0440\u0430\u0433\u043C\u0435\u043D\u0442 \u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u043D\u044F
+    \u0437 \u0447\u0438\u0441\u043B\u043E\u043C 3, \u043D\u0456\u0431\u0438\u0442\u043E
+    \u0432\u0456\u043D \u0431\u0443\u0432 \u0437\u0432\u0456\u0434\u043A\u0438\u0441\u044C
+    \u0432\u0438\u0440\u0432\u0430\u043D\u0438\u0439..."
