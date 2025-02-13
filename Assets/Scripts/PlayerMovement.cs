@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -29,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!inDialogue())
         {
-            _movement.Set(InputManager.Movement.x, InputManager.Movement.y);
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+
+            _movement.Set(moveX, moveY);
+            _movement = _movement.normalized;
 
             _rb.velocity = _movement * _moveSpeed;
 
@@ -40,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
 
                 _animator.SetFloat(_lastHorizontal, _movement.x);
                 _animator.SetFloat(_lastVertical, _movement.y);
-            } else
+            }
+            else
             {
                 _animator.SetFloat(_horizontal, 0);
                 _animator.SetFloat(_vertical, 0);
@@ -61,28 +63,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "ActObj")
+        if (collision.CompareTag("ActObj"))
         {
-            obj = collision.gameObject.GetComponent<ActionObject>();
-            obj1 = collision.gameObject.GetComponent<ActDialogue>();
+            obj = collision.GetComponent<ActionObject>();
+            ActDialogue newObj1 = collision.GetComponent<ActDialogue>();
+
+            if (newObj1 != null)
+            {
+                obj1 = newObj1;
+            }
 
             if (Input.GetKey(KeyCode.Return))
             {
-                if (obj != null)
-                {
-                    obj.ActivateDialogue();
-                }
-                
-                if (obj1 != null)
-                {
-                    obj1.ActiveDialogue();
-                }
+                if (obj != null) obj.ActivateDialogue();
+                if (obj1 != null)  obj1.ActiveDialogue();
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        obj = null;
+        if (collision.CompareTag("ActObj"))
+        {
+            obj = null;
+            obj1 = null;
+        }
     }
 }
