@@ -53,9 +53,9 @@ public class DoorHandle : MonoBehaviour
 
             if ((rotationAmount > 0 && allowClockwise) || (rotationAmount < 0 && allowCounterClockwise))
             {
-                float clampedAngle = Mathf.Clamp(newAngle, 0f, 180f);
+                float clampedAngle = Mathf.Clamp(newAngle, -180f, 0f);
 
-                if ((clampedAngle == 0f || clampedAngle == 180f) && currentAngle != clampedAngle)
+                if ((clampedAngle == -180f || clampedAngle == 0f) && currentAngle != clampedAngle)
                 {
                     PlayLockSound();
                 }
@@ -66,7 +66,7 @@ public class DoorHandle : MonoBehaviour
 
             previousMousePosition = currentMousePosition;
 
-            if (!isRotated && Mathf.Abs(currentAngle - 180) < 1f)
+            if (!isRotated && Mathf.Abs(currentAngle + 180) < 1f) 
             {
                 ActDelete();
                 isRotated = true;
@@ -78,6 +78,7 @@ public class DoorHandle : MonoBehaviour
             isDragging = false;
         }
     }
+
 
     private bool IsMouseOverHandle()
     {
