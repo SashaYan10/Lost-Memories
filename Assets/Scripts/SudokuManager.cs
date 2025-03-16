@@ -38,10 +38,12 @@ public class SudokuManager : MonoBehaviour
 
     public List<SudokuCell> cells;
     public GameObject winPanel;
+    public GameObject warningManager;
 
     void Start()
     {
         winPanel.SetActive(false);
+        warningManager.SetActive(true);
 
         foreach (var cell in cells)
         {
@@ -60,5 +62,6 @@ public class SudokuManager : MonoBehaviour
         }
 
         winPanel.SetActive(true);
+        warningManager.SetActive(false);
     }
 }

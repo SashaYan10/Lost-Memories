@@ -7,10 +7,12 @@ public class CubeWin : MonoBehaviour
 {
     public CubeState cubeState;
     public GameObject winPanel;
+    public GameObject warning;
 
     void Start()
     {
         winPanel.SetActive(false);
+        warning.SetActive(true);
     }
 
     // Update is called once per frame
@@ -48,5 +50,6 @@ public class CubeWin : MonoBehaviour
     void ShowWinPanel()
     {
         winPanel.SetActive(true);
+        warning.SetActive(false);
     }
 }

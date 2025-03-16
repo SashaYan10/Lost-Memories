@@ -69,4 +69,12 @@ public class TimerScript : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeInSeconds % 60f);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void ReduceTime(float seconds)
+    {
+        timeInSeconds -= seconds;
+        if (timeInSeconds < 0)
+            timeInSeconds = 0;
+        UpdateTimerText();
+    }
 }
