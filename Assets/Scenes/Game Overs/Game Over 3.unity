@@ -1363,7 +1363,6 @@ GameObject:
   - component: {fileID: 563110857}
   - component: {fileID: 563110860}
   - component: {fileID: 563110859}
-  - component: {fileID: 563110858}
   m_Layer: 5
   m_Name: DialogueHolder1
   m_TagString: Door
@@ -1393,18 +1392,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00012207031, y: -353}
   m_SizeDelta: {x: 1550, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &563110858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563110856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1aab4103429b2749b52073ce3757fad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &563110859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1673,7 +1660,7 @@ GameObject:
   - component: {fileID: 956741477}
   - component: {fileID: 956741480}
   - component: {fileID: 956741479}
-  - component: {fileID: 956741478}
+  - component: {fileID: 956741481}
   m_Layer: 5
   m_Name: DialogueLineMother3
   m_TagString: Untagged
@@ -1701,28 +1688,6 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 75.059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &956741478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956741476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0422\u0438 \u043D\u0435 \u043C\u0430\u0454\u0448 \u043F\u0440\u0430\u0432\u0430
-    \u0442\u0443\u0442 \u0431\u0443\u0442\u0438!"
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
-  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
-  imageHolder: {fileID: 716379979}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &956741479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1765,6 +1730,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956741476}
   m_CullTransparentMesh: 1
+--- !u!114 &956741481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956741476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0422\u0438 \u043D\u0435 \u043C\u0430\u0454\u0448 \u043F\u0440\u0430\u0432\u0430
+    \u0442\u0443\u0442 \u0431\u0443\u0442\u0438!"
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 1
+  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
+  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
+  imageHolder: {fileID: 716379979}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1 &999698449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2182,7 @@ GameObject:
   - component: {fileID: 1103240247}
   - component: {fileID: 1103240250}
   - component: {fileID: 1103240249}
-  - component: {fileID: 1103240248}
+  - component: {fileID: 1103240251}
   m_Layer: 5
   m_Name: DialogueLineMother
   m_TagString: Untagged
@@ -2222,27 +2210,6 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 75.059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1103240248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103240246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0429\u043E \u0442\u0438 \u0442\u0443\u0442 \u0440\u043E\u0431\u0438\u0448?!"
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
-  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
-  imageHolder: {fileID: 1299398509}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &1103240249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2285,6 +2252,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103240246}
   m_CullTransparentMesh: 1
+--- !u!114 &1103240251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103240246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0429\u043E \u0442\u0438 \u0442\u0443\u0442 \u0440\u043E\u0431\u0438\u0448?!"
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 1
+  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
+  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
+  imageHolder: {fileID: 1299398509}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1 &1172347475
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,7 +3600,7 @@ GameObject:
   - component: {fileID: 2143843973}
   - component: {fileID: 2143843976}
   - component: {fileID: 2143843975}
-  - component: {fileID: 2143843974}
+  - component: {fileID: 2143843977}
   m_Layer: 5
   m_Name: DialogueLineMother2
   m_TagString: Untagged
@@ -3639,28 +3628,6 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 75.059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2143843974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143843972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0425\u0442\u043E \u0442\u043E\u0431\u0456 \u0434\u043E\u0437\u0432\u043E\u043B\u044F\u0432
-    \u0441\u044E\u0434\u0438 \u0437\u0430\u0445\u043E\u0434\u0438\u0442\u0438?!"
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
-  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
-  imageHolder: {fileID: 316562821}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &2143843975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3703,6 +3670,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143843972}
   m_CullTransparentMesh: 1
+--- !u!114 &2143843977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143843972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0425\u0442\u043E \u0442\u043E\u0431\u0456 \u0434\u043E\u0437\u0432\u043E\u043B\u044F\u0432
+    \u0441\u044E\u0434\u0438 \u0437\u0430\u0445\u043E\u0434\u0438\u0442\u0438?!"
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 1
+  sound: {fileID: 8300000, guid: 7163bd9e8b3e2ef49a7c04e826da168d, type: 3}
+  characterSprite: {fileID: 21300000, guid: 200283a8717728243a6abbfdc98e2b32, type: 3}
+  imageHolder: {fileID: 316562821}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

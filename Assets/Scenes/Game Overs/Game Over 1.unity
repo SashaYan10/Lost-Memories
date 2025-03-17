@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 463337743}
   - component: {fileID: 463337746}
   - component: {fileID: 463337745}
-  - component: {fileID: 463337744}
+  - component: {fileID: 463337747}
   m_Layer: 5
   m_Name: DialogueLineMother
   m_TagString: Untagged
@@ -1317,27 +1317,6 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 75.059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &463337744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463337742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0429\u043E \u0436, \u043E\u0441\u044C \u043C\u0438 \u0439 \u043F\u043E\u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044F."
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 1dbeb8b1f6377bc41a99ea7d2836a038, type: 3}
-  characterSprite: {fileID: 21300000, guid: 29700bbaaf6e33d48a5de086d8173d8d, type: 3}
-  imageHolder: {fileID: 975547824}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &463337745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,6 +1359,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463337742}
   m_CullTransparentMesh: 1
+--- !u!114 &463337747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463337742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0429\u043E \u0436, \u043E\u0441\u044C \u043C\u0438 \u0439 \u043F\u043E\u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044F."
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 1
+  sound: {fileID: 8300000, guid: 1dbeb8b1f6377bc41a99ea7d2836a038, type: 3}
+  characterSprite: {fileID: 21300000, guid: 29700bbaaf6e33d48a5de086d8173d8d, type: 3}
+  imageHolder: {fileID: 975547824}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1 &472741353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,7 +1392,7 @@ GameObject:
   - component: {fileID: 472741354}
   - component: {fileID: 472741357}
   - component: {fileID: 472741356}
-  - component: {fileID: 472741355}
+  - component: {fileID: 472741358}
   m_Layer: 5
   m_Name: DialogueLineFather
   m_TagString: Untagged
@@ -1419,28 +1420,6 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 75.059}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &472741355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472741353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0412 \u043A\u043E\u043C\u043F\u0430\u043D\u0456\u0457 \u0432\u0436\u0435
-    \u0432\u0441\u0435 \u0432\u043B\u0430\u0434\u043D\u0430\u043B\u0438,"
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 65c73237dde66db43917bca2365c7ac6, type: 3}
-  characterSprite: {fileID: 21300000, guid: f587372410147cd4790e5442d4478450, type: 3}
-  imageHolder: {fileID: 897131931}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &472741356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,6 +1462,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472741353}
   m_CullTransparentMesh: 1
+--- !u!114 &472741358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472741353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0412 \u043A\u043E\u043C\u043F\u0430\u043D\u0456\u0457 \u0432\u0436\u0435
+    \u0432\u0441\u0435 \u0432\u043B\u0430\u0434\u043D\u0430\u043B\u0438,"
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 0
+  sound: {fileID: 8300000, guid: 65c73237dde66db43917bca2365c7ac6, type: 3}
+  characterSprite: {fileID: 21300000, guid: f587372410147cd4790e5442d4478450, type: 3}
+  imageHolder: {fileID: 897131931}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1 &477089557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +2103,6 @@ GameObject:
   - component: {fileID: 696713882}
   - component: {fileID: 696713881}
   - component: {fileID: 696713880}
-  - component: {fileID: 696713879}
   m_Layer: 5
   m_Name: DialogueHolder1
   m_TagString: Door
@@ -2109,18 +2110,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &696713879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696713878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1aab4103429b2749b52073ce3757fad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &696713880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2456,7 +2445,6 @@ GameObject:
   - component: {fileID: 769903905}
   - component: {fileID: 769903908}
   - component: {fileID: 769903907}
-  - component: {fileID: 769903906}
   m_Layer: 5
   m_Name: DialogueHolder2
   m_TagString: Door
@@ -2485,18 +2473,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000041962, y: -353}
   m_SizeDelta: {x: 1550, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &769903906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769903904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1aab4103429b2749b52073ce3757fad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &769903907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4953,7 +4929,7 @@ GameObject:
   - component: {fileID: 1834714252}
   - component: {fileID: 1834714251}
   - component: {fileID: 1834714250}
-  - component: {fileID: 1834714249}
+  - component: {fileID: 1834714253}
   m_Layer: 5
   m_Name: DialogueLineFather2
   m_TagString: Untagged
@@ -4961,29 +4937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1834714249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834714248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7622d30f3056954488e40d341ba071a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: "\u0442\u043E\u043C\u0443 \u0436\u0438\u0442\u0442\u044F \u043D\u0430\u0448\u0435
-    \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u044C\u0441\u044F \u0442\u0430\u043A
-    \u0441\u0430\u043C\u043E, \u044F\u043A \u0456 \u0434\u043E \u0446\u044C\u043E\u0433\u043E."
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
-  delay: 0.065
-  delayBetweenLines: 1
-  sound: {fileID: 8300000, guid: 65c73237dde66db43917bca2365c7ac6, type: 3}
-  characterSprite: {fileID: 21300000, guid: f587372410147cd4790e5442d4478450, type: 3}
-  imageHolder: {fileID: 1105852286}
-  shouldDestroyAfterFinish: 1
 --- !u!114 &1834714250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5046,6 +4999,30 @@ RectTransform:
   m_AnchoredPosition: {x: 56.914062, y: 0}
   m_SizeDelta: {x: 1339.6973, y: 135.03}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1834714253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834714248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb0cef2cf6432241be57e2a4da79e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: "\u0442\u043E\u043C\u0443 \u0436\u0438\u0442\u0442\u044F \u043D\u0430\u0448\u0435
+    \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u044C\u0441\u044F \u0442\u0430\u043A
+    \u0441\u0430\u043C\u043E, \u044F\u043A \u0456 \u0434\u043E \u0446\u044C\u043E\u0433\u043E."
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
+  delay: 0.065
+  delayBetweenLines: 1
+  sound: {fileID: 8300000, guid: 65c73237dde66db43917bca2365c7ac6, type: 3}
+  characterSprite: {fileID: 21300000, guid: f587372410147cd4790e5442d4478450, type: 3}
+  imageHolder: {fileID: 1105852286}
+  shouldDestroyAfterFinish: 1
+  autoConfirm: 0
 --- !u!1 &1837720974
 GameObject:
   m_ObjectHideFlags: 0

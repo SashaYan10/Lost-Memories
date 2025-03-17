@@ -26,6 +26,7 @@ namespace DialogueSystem
 
         [Header("Dialogue Settings")]
         [SerializeField] private bool shouldDestroyAfterFinish = false;
+        [SerializeField] private bool autoConfirm = false;
 
         private Coroutine lineAppearCoroutine;
 
@@ -57,7 +58,7 @@ namespace DialogueSystem
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Return) && textHolder.text == input)
+            if ((Input.GetKeyDown(KeyCode.Return) || autoConfirm) && textHolder.text == input)
             {
                 finished = true;
             }
