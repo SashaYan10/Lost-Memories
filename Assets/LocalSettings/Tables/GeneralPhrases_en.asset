@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: GeneralPhrases_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 37dd66ceadbfcca4a8b006aceb5fa765, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37844205568
+    m_Localized: Press Enter to exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124368502784
+    m_Localized: Press Enter to enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100000
+    m_Localized: Leave your room?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100001
+    m_Localized: Enter your room?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100002
+    m_Localized: Look under the bed?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100003
+    m_Localized: Twist the cube?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100004
+    m_Localized: Rubik's Cube solved!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100005
+    m_Localized: 'You got:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100006
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100007
+    m_Localized: The door is locked. Looks like it needs a key.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100008
+    m_Localized: Enter the baby room?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100009
+    m_Localized: Return to the hallway?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100010
+    m_Localized: Press the button?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100011
+    m_Localized: Take out the contents of the box?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100012
+    m_Localized: Looks like there was a puzzle inside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100013
+    m_Localized: Start assembling the puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100014
+    m_Localized: Puzzle completed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100015
+    m_Localized: Enter the father's room?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100016
+    m_Localized: Take the key from the coat?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100017
+    m_Localized: Start the puzzle?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100018
+    m_Localized: Welcome! To unlock the drawer, solve the Sudoku puzzle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100019
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100020
+    m_Localized: Congratulations! You now have access to the drawer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100021
+    m_Localized: Take the battery?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100022
+    m_Localized: Insert the battery into the train?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100023
+    m_Localized: Open the floor hatch?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100024
+    m_Localized: Put the money back?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100025
+    m_Localized: Take the money?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100026
+    m_Localized: "Unlock the door to mother\u2019s room?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100027
+    m_Localized: "Enter the mother\u2019s room?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100028
+    m_Localized: Peek into the crack?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100029
+    m_Localized: Take the hammer?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100030
+    m_Localized: Break the wooden board?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100031
+    m_Localized: Open the diary?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100032
+    m_Localized: Finish reading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100033
+    m_Localized: Unlock the door to the first floor?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100034
+    m_Localized: Go down to the first floor?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100035
+    m_Localized: Go up to the second floor?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100036
+    m_Localized: Try to play?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

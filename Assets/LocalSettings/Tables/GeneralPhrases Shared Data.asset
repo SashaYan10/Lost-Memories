@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GeneralPhrases Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GeneralPhrases
+  m_TableCollectionNameGuidString: 37dd66ceadbfcca4a8b006aceb5fa765
+  m_Entries:
+  - m_Id: 100000
+    m_Key: leave_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100001
+    m_Key: enter_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100002
+    m_Key: look_under_bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100003
+    m_Key: twist_cube
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100004
+    m_Key: rubik_done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100005
+    m_Key: you_got
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100006
+    m_Key: continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100007
+    m_Key: door_locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100008
+    m_Key: enter_baby_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100009
+    m_Key: return_hallway
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100010
+    m_Key: press_button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100011
+    m_Key: take_from_box
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100012
+    m_Key: box_has_puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100013
+    m_Key: start_puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100014
+    m_Key: puzzle_done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100015
+    m_Key: enter_father_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100016
+    m_Key: get_key_from_coat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100017
+    m_Key: start_riddle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100018
+    m_Key: sudoku_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100019
+    m_Key: start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100020
+    m_Key: access_drawer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100021
+    m_Key: take_battery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100022
+    m_Key: insert_battery_train
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100023
+    m_Key: open_floor_hatch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100024
+    m_Key: put_money_back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100025
+    m_Key: take_money
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100026
+    m_Key: unlock_mother_door
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100027
+    m_Key: enter_mother_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100028
+    m_Key: peek_crack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100029
+    m_Key: take_hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100030
+    m_Key: break_board
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100031
+    m_Key: open_diary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100032
+    m_Key: finish_reading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100033
+    m_Key: unlock_first_floor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100034
+    m_Key: go_downstairs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100035
+    m_Key: go_upstairs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100036
+    m_Key: try_play_piano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37844205568
+    m_Key: EnterExitKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124368502784
+    m_Key: EnterEntKey
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1492728018867060765
+  references:
+    version: 2
+    RefIds:
+    - rid: 1492728018867060765
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1746916195212

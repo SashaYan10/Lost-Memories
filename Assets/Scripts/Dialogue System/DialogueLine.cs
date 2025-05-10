@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 namespace DialogueSystem
 {
@@ -10,6 +12,7 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
+        [SerializeField] private string inputEng;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 
@@ -29,17 +32,23 @@ namespace DialogueSystem
         [SerializeField] private bool autoConfirm = false;
 
         private Coroutine lineAppearCoroutine;
+        private string selectedInput;
 
         private void Awake()
         {
-            imageHolder.sprite = characterSprite;
-            imageHolder.preserveAspect = true;
+            textHolder = GetComponent<Text>();
+            if (imageHolder != null && characterSprite != null)
+            {
+                imageHolder.sprite = characterSprite;
+                imageHolder.preserveAspect = true;
+            }
         }
 
         private void OnEnable()
         {
             ResetLine();
-            lineAppearCoroutine = StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
+            selectedInput = GetLocalizedInput();
+            lineAppearCoroutine = StartCoroutine(WriteText(selectedInput, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
         }
 
         public bool ShouldDestroyAfterFinish()
@@ -51,14 +60,14 @@ namespace DialogueSystem
         {
             if (Input.GetKeyDown(KeyCode.X))
             {
-                if (textHolder.text != input)
+                if (textHolder.text != selectedInput)
                 {
                     StopCoroutine(lineAppearCoroutine);
-                    textHolder.text = input;
+                    textHolder.text = selectedInput;
                 }
             }
 
-            if ((Input.GetKeyDown(KeyCode.Return) || autoConfirm) && textHolder.text == input)
+            if ((Input.GetKeyDown(KeyCode.Return) || autoConfirm) && textHolder.text == selectedInput)
             {
                 finished = true;
             }
@@ -66,9 +75,21 @@ namespace DialogueSystem
 
         private void ResetLine()
         {
-            textHolder = GetComponent<Text>();
             textHolder.text = "";
             finished = false;
+        }
+
+        private string GetLocalizedInput()
+        {
+            var locale = LocalizationSettings.SelectedLocale;
+            string code = locale.Identifier.Code;
+
+            if (code == "en")
+                return inputEng;
+            else if (code == "uk")
+                return input;
+            else
+                return inputEng;
         }
     }
 }

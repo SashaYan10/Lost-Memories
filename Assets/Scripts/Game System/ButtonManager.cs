@@ -57,4 +57,13 @@ public class ButtonManager : MonoBehaviour
         AudioSource audioSource = obj.GetComponent<AudioSource>();
         audioSource.Play();
     }
+
+    public void SetAlphaZero(GameObject obj)
+    {
+        CanvasGroup canvasGroup = obj.GetComponent<CanvasGroup>();
+        if (canvasGroup != null )
+        {
+            canvasGroup.alpha = 0f;
+        }
+    }
 }

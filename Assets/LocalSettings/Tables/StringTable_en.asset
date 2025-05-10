@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: StringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 1c97d24767f4f4e4b925b84069a0e271, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 71310557184
+    m_Localized: Start Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12191615991808
+    m_Localized: Instructions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12298486857728
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12385225064448
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12434449416192
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12491189960704
+    m_Localized: "Arrow keys (Up/Down/Left/Right) or W/S/A/D \u2013 move the character
+      in the respective direction\r\n\r\nEnter \u2013 interact with objects, continue
+      dialogue, confirm actions\r\n\r\nX \u2013 skip dialogue\r\n\r\nI \u2013 open
+      inventory\r\n\r\nEscape \u2013 open pause menu\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12620772982784
+    m_Localized: "To rotate the entire Rubik's Cube \u2013 hold the right mouse button\r\n\r\nTo
+      turn a specific face of the cube \u2013 hold the left mouse button\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12724204519424
+    m_Localized: Sound Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12792550703104
+    m_Localized: Language Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13574691930112
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17437444587520
+    m_Localized: Pause Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17575722401792
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17678059225088
+    m_Localized: Return to Main Menu
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -2048,6 +2048,7 @@ MonoBehaviour:
   input: "\u0412\u0441\u0435 \u0436, \u043F\u043E\u0442\u0440\u0456\u0431\u043D\u043E
     \u043D\u0430\u0432\u0430\u0436\u0438\u0442\u0438\u0441\u044F \u0441\u043F\u0440\u043E\u0431\u0443\u0432\u0430\u0442\u0438
     \u0432\u0438\u0439\u0442\u0438!"
+  inputEng: "Still\u2026 I need to gather the courage to try and step outside!"
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -3128,6 +3129,7 @@ MonoBehaviour:
   input: "\u041F\u0456\u0441\u043B\u044F \u0442\u043E\u0433\u043E, \u044F\u043A \u0431\u0430\u0442\u044C\u043A\u0438
     \u043F\u0456\u0448\u043B\u0438 \u0432\u0436\u0435 \u043C\u0438\u043D\u0443\u043B\u043E
     \u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E 2 \u0433\u043E\u0434\u0438\u043D\u0438."
+  inputEng: "It\u2019s been about two hours since my parents left."
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
