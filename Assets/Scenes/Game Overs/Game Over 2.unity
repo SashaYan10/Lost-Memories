@@ -478,6 +478,7 @@ MonoBehaviour:
   input: "\u0442\u043E\u043C\u0443 \u0436\u0438\u0442\u0442\u044F \u043D\u0430\u0448\u0435
     \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u044C\u0441\u044F \u0442\u0430\u043A
     \u0441\u0430\u043C\u043E, \u044F\u043A \u0456 \u0434\u043E \u0446\u044C\u043E\u0433\u043E."
+  inputEng: so our life will continue as before.
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -1347,7 +1348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: 0
-  sec: 34
+  sec: 35.5
 --- !u!4 &231978757
 Transform:
   m_ObjectHideFlags: 0
@@ -2075,6 +2076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "\u0429\u043E \u0442\u0438 \u0442\u0443\u0442 \u0440\u043E\u0431\u0438\u0448?"
+  inputEng: What are you doing here?
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -2182,6 +2184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533129631}
   - component: {fileID: 533129630}
+  - component: {fileID: 533129632}
   m_Layer: 0
   m_Name: OpenCloseDoor
   m_TagString: Untagged
@@ -2300,6 +2303,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533129632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533129629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bab00016ec3cc40b9b626a6899ac91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566397274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,8 +2351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.914062, y: 0}
-  m_SizeDelta: {x: 1339.6973, y: 75.059}
+  m_AnchoredPosition: {x: 56.914062, y: -0.00098801}
+  m_SizeDelta: {x: 1339.6973, y: 135.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566397277
 MonoBehaviour:
@@ -2395,6 +2410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "\u0412 \u043A\u043E\u043C\u043F\u0430\u043D\u0456\u0457 \u0432\u0436\u0435
     \u0432\u0441\u0435 \u0432\u043B\u0430\u0434\u043D\u0430\u043B\u0438,"
+  inputEng: The company has already settled everything,
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -3126,6 +3142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700118929}
   - component: {fileID: 700118928}
+  - component: {fileID: 700118930}
   m_Layer: 0
   m_Name: sund
   m_TagString: Untagged
@@ -3244,6 +3261,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &700118930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700118927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bab00016ec3cc40b9b626a6899ac91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &746872982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5124,6 +5153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "\u0429\u043E \u0436, \u043E\u0441\u044C \u043C\u0438 \u0439 \u043F\u043E\u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044F."
+  inputEng: "Well\u2026 here we are again."
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -6023,6 +6053,52 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &1432559275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432559277}
+  - component: {fileID: 1432559276}
+  m_Layer: 0
+  m_Name: CursotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1432559276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432559275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf7eea1b13e9df41a2857bdc25252e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panels: []
+  hammer: {fileID: 0}
+--- !u!4 &1432559277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432559275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1345.9702, y: 576.6827, z: -4.525005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440815870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7584,6 +7660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "\u0410 \u043D\u0443 \u0448\u0432\u0438\u0434\u0435\u043D\u044C\u043A\u043E
     \u0432 \u043A\u0456\u043C\u043D\u0430\u0442\u0443!"
+  inputEng: Get back to your room!
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -8747,3 +8824,4 @@ SceneRoots:
   - {fileID: 946628429}
   - {fileID: 1273809170}
   - {fileID: 700118929}
+  - {fileID: 1432559277}

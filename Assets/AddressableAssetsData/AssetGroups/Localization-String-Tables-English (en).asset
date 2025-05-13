@@ -24,6 +24,20 @@ MonoBehaviour:
     - Locale-en
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c1f45f43c492bd488bc98b18c8100a5
+    m_Address: Prologue_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9e18de923858f4489f524426d7a696a
+    m_Address: Diary_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b17f028739e8fae4f992b4766fdca3c8
     m_Address: StringTable_en
     m_ReadOnly: 1

@@ -14,6 +14,11 @@ public class Piano : MonoBehaviour, IPointerDownHandler
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         pianoMinigame = FindObjectOfType<PianoMinigame>();
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.RegisterAudioSrc(audioSource);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)

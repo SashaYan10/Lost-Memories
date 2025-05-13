@@ -20,6 +20,10 @@ public class LampOnOff : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.RegisterAudioSrc(audioSource);
+        }
     }
 
     private void Update()

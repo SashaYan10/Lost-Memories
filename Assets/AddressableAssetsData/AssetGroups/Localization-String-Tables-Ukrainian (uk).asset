@@ -24,6 +24,20 @@ MonoBehaviour:
     - Locale-uk
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27d3a750bdcb20f43a388bcbbb5f6af2
+    m_Address: Prologue_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a680dc228ede834882eb9e62eaf6502
+    m_Address: Diary_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 94ce04d5dffe49d409107d7d255a7838
     m_Address: GeneralPhrases_uk
     m_ReadOnly: 1

@@ -75,11 +75,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 100012
-    m_Localized: Looks like there was a puzzle inside.
+    m_Localized: Looks like there was a jigsaw puzzle inside.
     m_Metadata:
       m_Items: []
   - m_Id: 100013
-    m_Localized: Start assembling the puzzle
+    m_Localized: Start assembling the jigsaw puzzle
     m_Metadata:
       m_Items: []
   - m_Id: 100014
@@ -172,6 +172,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 100036
     m_Localized: Try to play?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182929459298304
+    m_Localized: Where have my thoughts wandered off to?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185892428890112
+    m_Localized: Play the console?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186309451759616
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186370038480896
+    m_Localized: No
     m_Metadata:
       m_Items: []
   references:

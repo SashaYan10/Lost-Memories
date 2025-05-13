@@ -1,30 +1,38 @@
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    private static AudioManager instance;
+    public static AudioManager Instance;
 
     public int[] playMusicScenes;
     public int[] stopMusicScenes;
     public int[] restartMusicScenes;
 
+    private List<AudioSource> allAudioSrc = new List<AudioSource>();
+    private float volume = 1f;
+
+    private AudioSource audioSource;
+
     void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            audioSource = GetComponent<AudioSource>();
+
+            volume = Mathf.Clamp(PlayerPrefs.GetFloat("MasterVolume", 1f), 0.0005f, 0.5f);
+
+            RegisterAudioSrc(audioSource);
         }
         else
         {
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
-        
     }
 
     void Update()
@@ -35,12 +43,10 @@ public class AudioManager : MonoBehaviour
         {
             PlayMusic();
         }
-
         else if (ArrayContains(stopMusicScenes, currentSceneIndex))
         {
             StopMusic();
         }
-
         else if (ArrayContains(restartMusicScenes, currentSceneIndex))
         {
             RestartMusic();
@@ -49,54 +55,24 @@ public class AudioManager : MonoBehaviour
 
     void PlayMusic()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-
-        if (audioSource != null)
+        if (!audioSource.isPlaying)
         {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
-            else
-            {
-                Debug.LogWarning("Audio is already playing.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("AudioSource is null.");
+            audioSource.Play();
         }
     }
 
-
     void StopMusic()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-
-        if (audioSource != null && audioSource.isPlaying)
+        if (audioSource.isPlaying)
         {
             audioSource.Stop();
-        }
-        else
-        {
-            Debug.LogWarning("AudioSource is either null or not playing.");
         }
     }
 
     void RestartMusic()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-
-        if (audioSource != null)
-        {
-            audioSource.Stop();
-
-            audioSource.Play();
-        }
-        else
-        {
-            Debug.LogWarning("AudioSource is null.");
-        }
+        audioSource.Stop();
+        audioSource.Play();
     }
 
     bool ArrayContains(int[] array, int value)
@@ -109,5 +85,39 @@ public class AudioManager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void RegisterAudioSrc(AudioSource source)
+    {
+        if (!allAudioSrc.Contains(source))
+        {
+            allAudioSrc.Add(source);
+            source.volume = volume;
+        }
+    }
+
+    public void UnregisterAudioSrc(AudioSource source)
+    {
+        if (allAudioSrc.Contains(source))
+        {
+            allAudioSrc.Remove(source);
+        }
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        foreach (AudioSource source in allAudioSrc)
+        {
+            if (source != null)
+                source.volume = volume;
+        }
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+        PlayerPrefs.Save();
+    }
+
+    public float GetVolume()
+    {
+        return volume;
     }
 }

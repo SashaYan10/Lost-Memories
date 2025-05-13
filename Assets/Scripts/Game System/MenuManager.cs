@@ -97,11 +97,12 @@ public class MenuManager : MonoBehaviour
     {
         foreach (var obj in activeNoPauseObjects)
         {
-            if (obj.activeSelf)
+            if (obj != null && obj.activeInHierarchy)
                 return false;
         }
         return true;
     }
+
 
     #endregion
 

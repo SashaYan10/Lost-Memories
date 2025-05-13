@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &358014570
 Animator:
   serializedVersion: 5
@@ -1372,6 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "\u0429\u043E \u0436, \u043E\u0441\u044C \u043C\u0438 \u0439 \u043F\u043E\u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044F."
+  inputEng: "Well\u2026 here we are again."
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -1417,8 +1418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.914062, y: 0}
-  m_SizeDelta: {x: 1339.6973, y: 75.059}
+  m_AnchoredPosition: {x: 56.914062, y: -5.8072}
+  m_SizeDelta: {x: 1339.6973, y: 146.6384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472741356
 MonoBehaviour:
@@ -1476,6 +1477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "\u0412 \u043A\u043E\u043C\u043F\u0430\u043D\u0456\u0457 \u0432\u0436\u0435
     \u0432\u0441\u0435 \u0432\u043B\u0430\u0434\u043D\u0430\u043B\u0438,"
+  inputEng: The company has already settled everything,
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -2869,7 +2871,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -745, y: 0}
+  m_AnchoredPosition: {x: -745, y: 3.1240997}
   m_SizeDelta: {x: 124.2203, y: 152.8866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &897131931
@@ -2995,6 +2997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053856827}
   - component: {fileID: 1053856826}
+  - component: {fileID: 1053856828}
   m_Layer: 0
   m_Name: OpenCloseDoor
   m_TagString: Untagged
@@ -3113,6 +3116,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053856828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053856825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bab00016ec3cc40b9b626a6899ac91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067715979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,7 +3573,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -745, y: 0}
+  m_AnchoredPosition: {x: -743, y: 3.1233}
   m_SizeDelta: {x: 124.2203, y: 152.8866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1142642062
@@ -3662,6 +3677,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1220026790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220026792}
+  - component: {fileID: 1220026791}
+  m_Layer: 0
+  m_Name: CursotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1220026791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220026790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf7eea1b13e9df41a2857bdc25252e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panels: []
+  hammer: {fileID: 0}
+--- !u!4 &1220026792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220026790}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1345.9702, y: 576.6827, z: -4.525005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1234610246
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,8 +5057,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.914062, y: 0}
-  m_SizeDelta: {x: 1339.6973, y: 135.03}
+  m_AnchoredPosition: {x: 56.914062, y: -5.8074}
+  m_SizeDelta: {x: 1339.6973, y: 146.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834714253
 MonoBehaviour:
@@ -5014,6 +5075,7 @@ MonoBehaviour:
   input: "\u0442\u043E\u043C\u0443 \u0436\u0438\u0442\u0442\u044F \u043D\u0430\u0448\u0435
     \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u044C\u0441\u044F \u0442\u0430\u043A
     \u0441\u0430\u043C\u043E, \u044F\u043A \u0456 \u0434\u043E \u0446\u044C\u043E\u0433\u043E."
+  inputEng: so our life will continue as before.
   textColor: {r: 0, g: 0, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a35d8716cb639034db75c310848fc93e, type: 3}
   delay: 0.065
@@ -5902,7 +5964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: 0
-  sec: 24
+  sec: 24.5
 --- !u!4 &2033734974
 Transform:
   m_ObjectHideFlags: 0
@@ -5975,3 +6037,4 @@ SceneRoots:
   - {fileID: 192739966}
   - {fileID: 1053856827}
   - {fileID: 2033734974}
+  - {fileID: 1220026792}

@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Diary_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 1e96301241c4cda4fa39ffe892b5a15c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12649021440
+    m_Localized: October 11, 2002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81221697536
+    m_Localized: "  I was a third-year student at the University of Economics. Back
+      then, I really liked a guy. We went on quite a few dates\u2026 until my father
+      found out \u2013 and he was furious. You see, my family had founded a tech
+      company, so we were very wealthy. His parents, though, worked at that same
+      company. At some point, a conflict broke out between our families. His parents
+      were fired, and since then, they could barely make ends meet. My father had
+      ties with the yakuza\u2026 and he decided to \u201Cwarn\u201D the guy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 345479626752
+    m_Localized: I never saw him again after that day.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1985809006592
+    m_Localized: March 20, 2004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2049050722304
+    m_Localized: "  As I was nearing graduation, my parents decided it was time to
+      find me a husband. They picked someone. He and his family were the founders
+      of a company called SONI \u2013\r they made everything from game consoles to
+      electronic locks. I didn\u2019t like him at all. But I didn\u2019t have a choice.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2068080279552
+    m_Localized: June 17, 2004
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2776112349184
+    m_Localized: "  I ended up marrying him. Turns out, his parents also forced him
+      to marry me. Maybe\u2026 just maybe\u2026 we\u2019ll get along?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2873080463360
+    m_Localized: About a year later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2930387238912
+    m_Localized: "  No, we didn\u2019t get along. Not even close. He\u2019s a real
+      bastard. He takes everything out on me \u2013 the yelling, the insults, all
+      of it. I complained to my parents, but they didn\u2019t want to hear it. I
+      don\u2019t know how much longer I can take this."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3003439431680
+    m_Localized: About ten years later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3064000987136
+    m_Localized: "  We had to move to America to open a joint company. Soon I was
+      supposed to give birth to this bastard\u2019s child \u2013 a son, to be exact.
+      I also found out something else: he absolutely hates Christianity."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3145924132864
+    m_Localized: August 8, 2015
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197748953088
+    m_Localized: "  We finally moved. Our parents came with us. I hate them too \u2013
+      just like I hate my bastard husband. But after 11 years of this, at least we
+      agree on one thing\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6210660122624
+    m_Localized: September 12, 2015
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6276221288448
+    m_Localized: '  I was supposed to give birth to a son, but'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6468236525568
+    m_Localized: we gave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7028595539968
+    m_Localized: him to
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7072245661696
+    m_Localized: he died.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7192907399168
+    m_Localized: "Never even got the chance to be born. Maybe it was because of all
+      the beatings... And by the way \u2013 about his \u201Cweakness,\u201D or rather,
+      his hatred of Christianity\u2026 I turned one of the rooms in our house into
+      a Christian-themed space. I told him I was a believer. Now, once a month, I
+      lock myself in there all day\u2026 so at least I get one day of peace."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7340714672128
+    m_Localized: November 15, 2027
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8124391014400
+    m_Localized: "  I had a child. A girl. But from the very beginning\u2026 something
+      was wrong with her. She drives me insane..."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

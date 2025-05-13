@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class DialogueLineC : DialogueBaseC
@@ -9,6 +10,7 @@ public class DialogueLineC : DialogueBaseC
 
     [Header("Text Options")]
     [SerializeField] private string input;
+    [SerializeField] private string inputEng;
     [SerializeField] private Color textColor;
     [SerializeField] private Font textFont;
 
@@ -28,17 +30,23 @@ public class DialogueLineC : DialogueBaseC
     [SerializeField] private bool autoConfirm = false;
 
     private Coroutine lineAppearCoroutine;
+    private string selectedInput;
 
     private void Awake()
     {
-        imageHolder.sprite = characterSprite;
-        imageHolder.preserveAspect = true;
+        textHolder = GetComponent<Text>();
+        if (imageHolder != null && characterSprite != null)
+        {
+            imageHolder.sprite = characterSprite;
+            imageHolder.preserveAspect = true;
+        }
     }
 
     private void OnEnable()
     {
         ResetLine();
-        lineAppearCoroutine = StartCoroutine(WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
+        selectedInput = GetLocalizedInput();
+        lineAppearCoroutine = StartCoroutine(WriteText(selectedInput, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
     }
 
     public bool ShouldDestroyAfterFinish()
@@ -48,7 +56,16 @@ public class DialogueLineC : DialogueBaseC
 
     private void Update()
     {
-        if (autoConfirm && textHolder.text == input)
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (textHolder.text != selectedInput)
+            {
+                StopCoroutine(lineAppearCoroutine);
+                textHolder.text = selectedInput;
+            }
+        }
+
+        if ((Input.GetKeyDown(KeyCode.Return) || autoConfirm) && textHolder.text == selectedInput)
         {
             finished = true;
         }
@@ -56,8 +73,20 @@ public class DialogueLineC : DialogueBaseC
 
     private void ResetLine()
     {
-        textHolder = GetComponent<Text>();
         textHolder.text = "";
         finished = false;
+    }
+
+    private string GetLocalizedInput()
+    {
+        var locale = LocalizationSettings.SelectedLocale;
+        string code = locale.Identifier.Code;
+
+        if (code == "en")
+            return inputEng;
+        else if (code == "uk")
+            return input;
+        else
+            return inputEng;
     }
 }

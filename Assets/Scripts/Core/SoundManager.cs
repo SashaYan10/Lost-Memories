@@ -10,6 +10,11 @@ public class SoundManager : MonoBehaviour
     {
         instance = this;
         source = GetComponent<AudioSource>();
+
+        if (AudioManager.Instance != null )
+        {
+            AudioManager.Instance.RegisterAudioSrc(source);
+        }
     }
 
     public void PlaySound(AudioClip sound)

@@ -31,19 +31,19 @@ public class TimerScript : MonoBehaviour
                 timeInSeconds -= Time.deltaTime;
                 UpdateTimerText();
             }
-            else if (finish1.activeSelf)
+            else if (finish1.activeInHierarchy)
             {
                 SceneManager.LoadScene(gameOver1);
             }
-            else if (finish2.activeSelf)
+            else if (finish2.activeInHierarchy)
             {
                 SceneManager.LoadScene(gameOver2);
             }
-            else if (finish3.activeSelf)
+            else if (finish3.activeInHierarchy)
             {
                 SceneManager.LoadScene(gameOver3);
             }
-            else if (finish4.activeSelf)
+            else if (finish4.activeInHierarchy)
             {
                 SceneManager.LoadScene(gameOver4);
             }

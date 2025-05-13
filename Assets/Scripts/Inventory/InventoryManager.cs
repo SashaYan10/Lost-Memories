@@ -49,7 +49,7 @@ public class InventoryManager : MonoBehaviour
 
         inventoryDescriptionPanel.SetActive(true);
         itemImage.sprite = item.itemIcon;
-        itemDescription.text = item.itemDescription;
+        itemDescription.text = item.GetLocalizedDescription();
     }
 
     public void HideDescription()
