@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CubeMap : MonoBehaviour
 {
     private CubeState cubeState;
+    private TimerScript timerScript;
 
     public Transform up;
     public Transform down;
@@ -14,58 +15,88 @@ public class CubeMap : MonoBehaviour
     public Transform front;
     public Transform back;
 
+    public GameObject errorPanel;
+
+    private bool hasPenaltyApplied = false;
+
     void Start()
     {
-
+        timerScript = FindObjectOfType<TimerScript>();
     }
 
-    void Update()
-    {
-
-    }
     public void Set()
     {
         cubeState = FindObjectOfType<CubeState>();
 
-        UpdateMap(cubeState.front, front);
-        UpdateMap(cubeState.back, back);
-        UpdateMap(cubeState.left, left);
-        UpdateMap(cubeState.right, right);
-        UpdateMap(cubeState.up, up);
-        UpdateMap(cubeState.down, down);
-    }
+        try
+        {
+            UpdateMap(cubeState.front, front);
+            UpdateMap(cubeState.back, back);
+            UpdateMap(cubeState.left, left);
+            UpdateMap(cubeState.right, right);
+            UpdateMap(cubeState.up, up);
+            UpdateMap(cubeState.down, down);
+        }
+        catch (System.ArgumentOutOfRangeException ex)
+        {
+            Debug.LogWarning("Кубик пошкоджено: " + ex.Message);
+            ShowErrorPanel();
 
+            if (!hasPenaltyApplied && timerScript != null)
+            {
+                timerScript.ReduceTime(600f);
+                hasPenaltyApplied = true;
+            }
+        }
+    }
 
     void UpdateMap(List<GameObject> face, Transform side)
     {
         int i = 0;
         foreach (Transform map in side)
         {
-            if (face[i].name[0] == 'F')
+            if (i >= face.Count)
             {
-                map.GetComponent<Image>().color = new Color(1, 0.5f, 0, 1);
+                throw new System.ArgumentOutOfRangeException("face", "Сторона кубика має менше елементів, ніж очікувалося.");
             }
-            if (face[i].name[0] == 'B')
+
+            char c = face[i].name[0];
+
+            switch (c)
             {
-                map.GetComponent<Image>().color = Color.red;
+                case 'F':
+                    map.GetComponent<Image>().color = new Color(1, 0.5f, 0, 1);
+                    break;
+                case 'B':
+                    map.GetComponent<Image>().color = Color.red;
+                    break;
+                case 'U':
+                    map.GetComponent<Image>().color = Color.yellow;
+                    break;
+                case 'D':
+                    map.GetComponent<Image>().color = Color.white;
+                    break;
+                case 'L':
+                    map.GetComponent<Image>().color = Color.green;
+                    break;
+                case 'R':
+                    map.GetComponent<Image>().color = Color.blue;
+                    break;
             }
-            if (face[i].name[0] == 'U')
-            {
-                map.GetComponent<Image>().color = Color.yellow;
-            }
-            if (face[i].name[0] == 'D')
-            {
-                map.GetComponent<Image>().color = Color.white;
-            }
-            if (face[i].name[0] == 'L')
-            {
-                map.GetComponent<Image>().color = Color.green;
-            }
-            if (face[i].name[0] == 'R')
-            {
-                map.GetComponent<Image>().color = Color.blue;
-            }
+
             i++;
+        }
+    }
+
+    void ShowErrorPanel()
+    {
+        if (errorPanel != null)
+        {
+            errorPanel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("errorPanel не призначено в інспекторі!");
         }
     }
 }

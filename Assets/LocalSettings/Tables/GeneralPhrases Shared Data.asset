@@ -187,6 +187,10 @@ MonoBehaviour:
     m_Key: ConsoleKey
     m_Metadata:
       m_Items: []
+  - m_Id: 3115818815635456
+    m_Key: OpsKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
